@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     // only watch html and scss, we don't expect any JS coding here
     watch: {
       scripts: {
-        files: ['src/**/*.html', 'src/**/*.scss'],
+        files: ['src/**/*.html', 'src/**/*.scss', 'src/**/*.png'],
         tasks: ['sass', 'copy'],
         options: {
           interrupt: true,

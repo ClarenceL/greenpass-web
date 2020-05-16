@@ -1,3 +1,6 @@
+$white-text: #daf3e9;
+$dark-text: #002e22;
+
 @font-face {
   font-family: 'Noto Sans';
   font-style: normal;
@@ -41,8 +44,222 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #222;
   font-weight: 200;
   font-family: 'Noto Sans', 'Helvetica', sans-serif;
+  overflow: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans', 'Helvetica', sans-serif;
+}
+
+.emphasis {
+  font-weight: 300;
+}
+
+header {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 675px;
+  position: relative;
+}
+
+nav {
+  padding: 13px 0;
+
+  .navbar-nav .nav-link {
+    padding: 1.5rem 1.5rem !important;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .navbar-nav.ml-auto img {
+    width: 9px;
+    top: -5px;
+    position: relative;
+  }
+}
+
+.btn.gettouch.my-sm-0 {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 12px 40px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-left: 27px;
+  font-weight: 500;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.btn.gettouch.my-sm-0:hover {
+  background-color: #0b2e13;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+  #navbarResponsive {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+  }
+
+  .navbar {
+  }
+
+  .navbar-expand-lg .nav-link {
+    padding: 20px;
+    background: #00612c;
+    text-align: center;
+  }
+  .nav-item {
+    background: rgb(53, 38, 82);
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(247, 247, 247, 0.22);
+  }
+  .btn.gettouch.my-sm-0 {
+    background: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 13px 23px;
+    border-radius: 0;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    width: 100%;
+    color: #000;
+    margin: 0;
+  }
+
+  .btn.gettouch.my-sm-0:hover {
+    background-color: #9bc5ae;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+#logo_large {
+  position: absolute;
+  right: 0;
+  width: 600px;
+  top: 120px;
+}
+
+@media only all and (max-width: 991px) {
+  #logo_large {
+    display: none;
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+
+  background-image: url(../img/bg02.png);
+  background-size: 600px;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  height: 500px;
+  margin-top: 50px;
+
+  color: $white-text;
+
+  img {
+    max-swidth: 100%;
+  }
+
+  .title {
+    margin-top: 75px;
+  }
+
+  .subtitle {
+    color: white;
+    font-weight: 400;
+    margin-left: 12px;
+  }
+
+  p.small {
+    margin-top: 24px;
+    margin-left: 12px;
+    color: #daf3e9;
+    font-size: 90%;
+    font-weight: 200;
+  }
+}
+
+.download {
+  text-align: center;
+
+  a {
+    display: block;
+  }
+}
+
+section {
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+section.features,
+section.technology {
+  background-color: #129956;
+}
+
+section.download {
+  .container {
+    padding-top: 0;
+  }
+}
+
+// overriding for now
+.dma-text-dark {
+  color: $dark-text;
+}
+
+.dma-text-white {
+  color: $white-text;
+}
+
+.card-title {
+  color: $dark-text;
+}
+
+.w3ls-info > table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.section-title {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 991px) {
 }
